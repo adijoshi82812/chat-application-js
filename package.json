@@ -1,0 +1,36 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm:backend\" \"npm:frontend\"",
+    "backend": "nodemon --ignore ./frontend",
+    "frontend": "cd frontend && npm start",
+    "prettier": "prettier --write --config .prettierrc.json \"**/*.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "validator": "^13.9.0",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "eslint": "^8.45.0",
+    "nodemon": "^3.0.1",
+    "prettier": "3.0.0"
+  }
+}
